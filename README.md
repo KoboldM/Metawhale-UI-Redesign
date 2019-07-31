@@ -1,5 +1,12 @@
 # metawhale
 
+Uses:
+  VueJS
+  VueRouter
+  Vuex
+  Vuetify
+  MdiVue ( for icons )
+
 ## Project setup
 ```
 npm install
