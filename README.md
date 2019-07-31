@@ -30,13 +30,3 @@ To install & run ( Vue CLI ) ( Harder than UI installation )
   6) Install Vuetify with ``` npm install Veutify --save ```
     6.1) The project SHOULD have "src/plugins/vuetify.js"
   7) The required modules should be installed; execute ``` npm run serve ``` to open the project in the browser
-
-## Project setup
-```
-npm install
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
