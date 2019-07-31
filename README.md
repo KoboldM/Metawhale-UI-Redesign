@@ -1,10 +1,10 @@
 # metawhale
 
 Uses:
-  VueJS
-  VueRouter
-  Vuex
-  Vuetify
+  VueJS,
+  VueRouter,
+  Vuex,
+  Vuetify,
   MdiVue ( for icons )
 
 ## Project setup
