@@ -7,16 +7,19 @@ To install VueJS:
 npm install vue
 ```
 
+
+
 To install & run ( Vue UI ) ( Recommended )
-  1) Import Project into Vue UI ( https://imgur.com/a/Qch7Ou4 )
-  2) Your project dashboard should open
-  3) Open plugins in the navigation menu at the left
-  4) Add Plugin ( top right ) -> Vuetify
-  5) Open dependencies in the navigation menu at the left
-  6) These should be the listed dependencies https://imgur.com/a/SQlQ48V ( install Vuex, Vue Router, Vuetify, Mdi Icons )
-  7) Go to Tasks in the navigation Menu
-  8) Go to Serve and Start Task
-  9) To open the website, click Open App
+  1) Use command ``` vue ui ``` to launch the Vue UI 
+  2) Import Project into Vue UI ( https://imgur.com/a/Qch7Ou4 )
+  3) Your project dashboard should open
+  4) Open plugins in the navigation menu at the left
+  5) Add Plugin ( top right ) -> Vuetify
+  6) Open dependencies in the navigation menu at the left
+  7) These should be the listed dependencies https://imgur.com/a/SQlQ48V ( install Vuex, Vue Router, Vuetify, Mdi Icons )
+  8) Go to Tasks in the navigation Menu
+  9) Go to Serve and Start Task
+  10) To open the website, click Open App
 
 To install & run ( Vue CLI ) ( Harder than UI installation )
   1) Download project / pull
