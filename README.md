@@ -4,7 +4,10 @@ The project uses: VueJS, Vuex, Vue Router, Vuetify, MdiIcons
 
 To install VueJS:
 ```
+
 npm install vue
+npm install -g @vue/cli
+
 ```
 
 
