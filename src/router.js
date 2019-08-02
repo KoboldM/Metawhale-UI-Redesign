@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Home from './views/Home.vue'
-
+/* import Home from './views/Home.vue'
+ */
 Vue.use(Router)
 
 export default new Router({
@@ -9,24 +9,24 @@ export default new Router({
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
   routes: [
-    {
+/*      {
       path: '/',
       name: 'home',
       component: Home
-    },
-  /*   {
-      media-meter.net/datascraper (dashboard)
+    },  */
+/*      {
+      //media-meter.net/datascraper (dashboard)
       path: '/',
       name: 'dashboard',
       component: () => import('')
-    }, */
+    },  */
     {
       //media-meter.net/datascraper/login
       path: '/login',
       name: 'login',
-      component: () => import( /* */ './components/_Login/Login.vue')
+      component: () => import('./components/_Login/Login.vue')
     },
-/*     {
+    /*  {
       //media-meter.net/datascraper/websites
       path: '/websites',
       name: 'websites',
@@ -37,13 +37,13 @@ export default new Router({
       path: '/tophits',
       name: 'tophits',
       component: () => import('./components/_Tophits/Tophits.vue')
-    },
+    }, */
     {
       //media-meter.net/datascraper/crawlerstats
       path: '/crawlerstats',
       name: 'crawlerstats',
       component: () => import('./components/_Crawlerstats/Crawlerstats.vue')
-    }, */
+    }, 
     {
       //media-meter.net/datascraper/infrascraper
       path: '/infrascraper',
@@ -76,3 +76,22 @@ export default new Router({
     } */
   ]
 })
+
+Vue.component('navDrawerRouting', {
+  template: '#routing',
+  computed: {
+    routes: function () {
+      var routes = [];
+      for (var i in this.$router.options.routes) {
+      if (!this.$router.options.routes.hasOwnProperty(i)) {
+        continue
+      }
+      var route = this.$router.options.routes[i];
+      if(route.hasOwnProperty('title')) {
+        routes.push(route);
+      }
+    }
+      return routes;
+    }
+  }
+});

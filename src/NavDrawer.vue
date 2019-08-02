@@ -8,32 +8,37 @@
         fixed
     > 
 
-    <v-list-item
-        v-for="item in items"
-        :key="item.title"
-        link
-    >
 
-        <v-list-item-icon>
-            <v-icon>{{ item.icon }}</v-icon>
-        </v-list-item-icon>
 
-        <v-list-item-content>
-            <v-list-item-title>{{ item.title }}</v-list-item-title>
-        </v-list-item-content>
+        <v-list-item
+            v-for="item in items"
+            :key="item.title"
+            link
+        >
 
-    </v-list-item>
+
+            <v-list-item-icon>
+                <v-icon>{{ item.icon }}</v-icon>
+            </v-list-item-icon>
+
+            <v-list-item-content>
+                <v-list-item-title>{{ item.title }}</v-list-item-title>
+            </v-list-item-content>
+
+        </v-list-item>
+
+  
 
     </v-navigation-drawer>
 </template>
 
 <script>
-export default {    
+export default {
     name: 'NavDrawer',
     props: {
-    value: {
-        type: Boolean,
-        default: false
+        value: {
+            type: Boolean,
+            default: false
         }   
     },
     data () {

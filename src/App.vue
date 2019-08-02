@@ -17,7 +17,7 @@
     >
 
     <v-app-bar-nav-icon
-      @click.stop="drawer = !drawer"
+      @click.stop="drawer = !drawer"  
     ></v-app-bar-nav-icon>
 
 
@@ -51,23 +51,34 @@ export default {
 </script>
 
 <style>
-@font-face {
-  font-family: Comforta;
-  src: url('./assets/fonts/Comfortaa-Bold.ttf');
-}
-@font-face {
-  font-family: Avenir;
-  src: url('./assets/fonts/AvenirLTStd-Medium.otf');
-}
-#toolbarTitle {
-  font-weight: bold;
-  color: #f78b1e;
-  font-family: Comforta;
-}
-#toolbarSubTitle {
-  font-weight: bolder;
-  color: #dcddde;
-  font-family: Avenir;
-}
+  @font-face {
+    font-family: Comforta;
+    src: url('./assets/fonts/Comfortaa-Bold.ttf');
+  }
+  @font-face {
+    font-family: Avenir;
+    src: url('./assets/fonts/AvenirLTStd-Medium.otf');
+  }
+  #toolbarTitle {
+    font-weight: bold;
+    color: #f78b1e;
+    font-family: Comforta;
+  }
+  #toolbarSubTitle {
+    font-weight: bolder;
+    color: #dcddde;
+    font-family: Avenir;
+  }
+  #divLocationIndicator {
+      height: 90px;
+      width: auto;
+      background-color: #F78B1E;
+      font-family: Avenir;
+      font-size: 40px;
+      font-weight: lighter;
+      padding-left: 8px;
+      padding-top: 12px;
+  }
+
 </style>
 
