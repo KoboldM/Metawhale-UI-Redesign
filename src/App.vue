@@ -22,14 +22,16 @@
 
 
     <v-toolbar-title>
-      <span id = "toolbarTitle">media meter </span>
+      
       <span id = "toolbarSubTitle">Data Scraper</span>
     </v-toolbar-title>
 
     </v-app-bar>
 
     <v-content>
-      <router-view/>
+      <router-view
+        style = "background-color: #dcddde;"
+      />
     </v-content>
 
   </v-app>
@@ -41,11 +43,11 @@ import NavDrawer from './NavDrawer.vue'
 export default {
   name: 'App',
   components: {
-    NavDrawer,
+    NavDrawer
   },
   data: () => ({
-    drawer: false,
-    elevateOnScroll: false,
+    drawer: true,
+    elevateOnScroll: false
   })
 } 
 </script>
@@ -79,6 +81,6 @@ export default {
       padding-left: 8px;
       padding-top: 12px;
   }
-
+  
 </style>
 

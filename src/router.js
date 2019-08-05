@@ -2,6 +2,18 @@ import Vue from 'vue'
 import Router from 'vue-router'
 /* import Home from './views/Home.vue'
  */
+
+import Login from './components/_Login/Login.vue'
+import Websites from './components/_Websites/Websites.vue'
+import Tophits from './components/_Tophits/Tophits.vue'
+import Crawlerstats from './components/_Crawlerstats/Crawlerstats.vue'
+import Infrascraper from './components/_Infrascraper/Infrascraper.vue'
+import Issues from './components/_Issues/Issues.vue'
+import SocialMedia from './components/_Socialmedia/Socialmedia.vue'
+import Articles from './components/_Articles/Articles.vue'
+import Settings from './components/_Settings/Settings.vue'
+import Scraperchecker from './components/_Scraperchecker/Scraperchecker.vue'
+
 Vue.use(Router)
 
 export default new Router({
@@ -15,7 +27,7 @@ export default new Router({
       component: Home
     },  */
 /*      {
-      //media-meter.net/datascraper (dashboard)
+      //media-meter.net/datascraper (dashboard) // to import
       path: '/',
       name: 'dashboard',
       component: () => import('')
@@ -24,13 +36,13 @@ export default new Router({
       //media-meter.net/datascraper/login
       path: '/login',
       name: 'login',
-      component: () => import('./components/_Login/Login.vue')
+      component: Login
     },
     /*  {
       //media-meter.net/datascraper/websites
       path: '/websites',
       name: 'websites',
-      component: () => import('./components/_Websites/Websites.vue')
+      component: Websites
     },
     {
       //media-meter.net/datascraper/tophits
@@ -42,56 +54,46 @@ export default new Router({
       //media-meter.net/datascraper/crawlerstats
       path: '/crawlerstats',
       name: 'crawlerstats',
-      component: () => import('./components/_Crawlerstats/Crawlerstats.vue')
+      component: Crawlerstats
     }, 
     {
       //media-meter.net/datascraper/infrascraper
       path: '/infrascraper',
       name: 'infrascraper',
-      component: () => import('./components/_Infrascraper/Infrascraper.vue')
+      component: Infrascraper
     }/* ,
     {
       //media-meter.net/datascraper/issues
       path: '/issues',
       name: 'issues',
-      component: () => import('./components/_Issues/Issues.vue')
+      component: Issues
     },
     {
       //media-meter.net/datascraper/socialmedia
       path: '/socialmedia',
       name: 'socialmedia',
-      component: () => import('./components/_Socialmedia/Socialmedia.vue')
+      component: SocialMedia
     },
     {
       //media-meter.net/datascraper/articles
       path: '/articles',
       name: 'articles',
-      component: () => import('./components/_Articles/Articles.vue')
+      component: Articles
     },
     {
       //media-meter.net/datascraper/settings
       path: '/settings',
       name: 'settings',
-      component: () => import('')
-    } */
+      component: Settings
+    }, 
+    {
+      //media-meter.net/datascraper/scraperchecker
+      path: '/scraperchecker',
+      name: 'scraperchecker',
+      component: Scraperchecker
+    }
+    
+    */
   ]
 })
 
-Vue.component('navDrawerRouting', {
-  template: '#routing',
-  computed: {
-    routes: function () {
-      var routes = [];
-      for (var i in this.$router.options.routes) {
-      if (!this.$router.options.routes.hasOwnProperty(i)) {
-        continue
-      }
-      var route = this.$router.options.routes[i];
-      if(route.hasOwnProperty('title')) {
-        routes.push(route);
-      }
-    }
-      return routes;
-    }
-  }
-});
