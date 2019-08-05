@@ -1,7 +1,5 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-/* import Home from './views/Home.vue'
- */
 
 import Login from './components/_Login/Login.vue'
 import Websites from './components/_Websites/Websites.vue'
@@ -13,19 +11,12 @@ import SocialMedia from './components/_Socialmedia/Socialmedia.vue'
 import Articles from './components/_Articles/Articles.vue'
 import Settings from './components/_Settings/Settings.vue'
 import Scraperchecker from './components/_Scraperchecker/Scraperchecker.vue'
+import Logout from './components/_Logout/Logout.vue'
 
 Vue.use(Router)
 
 export default new Router({
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
   routes: [
-/*      {
-      path: '/',
-      name: 'home',
-      component: Home
-    },  */
 /*      {
       //media-meter.net/datascraper (dashboard) // to import
       path: '/',
@@ -38,7 +29,7 @@ export default new Router({
       name: 'login',
       component: Login
     },
-    /*  {
+     {
       //media-meter.net/datascraper/websites
       path: '/websites',
       name: 'websites',
@@ -48,8 +39,8 @@ export default new Router({
       //media-meter.net/datascraper/tophits
       path: '/tophits',
       name: 'tophits',
-      component: () => import('./components/_Tophits/Tophits.vue')
-    }, */
+      component: Tophits
+    },
     {
       //media-meter.net/datascraper/crawlerstats
       path: '/crawlerstats',
@@ -61,7 +52,7 @@ export default new Router({
       path: '/infrascraper',
       name: 'infrascraper',
       component: Infrascraper
-    }/* ,
+    },
     {
       //media-meter.net/datascraper/issues
       path: '/issues',
@@ -91,9 +82,13 @@ export default new Router({
       path: '/scraperchecker',
       name: 'scraperchecker',
       component: Scraperchecker
+    },
+    {
+      //media-meter.net/datascraper/logout
+      path: '/logout',
+      name: 'logout',
+      component: Logout
     }
-    
-    */
   ]
 })
 

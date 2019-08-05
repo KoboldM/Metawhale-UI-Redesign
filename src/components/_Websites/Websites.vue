@@ -1,13 +1,17 @@
 <template>
-    <v-responsive style = "
-        background-color: orange;"
-        id = "divLocationIndicator"
-        vue-resize-text
-    >
+    <v-app>
+        <div>
+            <v-responsive style = "
+                background-color: orange;"
+                id = "divLocationIndicator"
+                vue-resize-text
+            >
 
-    Search Website & Domain
+            Search Website & Domain
 
-    </v-responsive>
+            </v-responsive>
+        </div>
+    </v-app>
 </template>
 
 <script>

@@ -1,7 +1,7 @@
 <!-- 
     TODO:
         1) Fix Routerlink CSS
-        
+
 -->
 <template>
     <v-navigation-drawer
@@ -59,7 +59,7 @@ export default {
                 { title: 'Social Media', icon: 'mdi-account-multiple-outline', routerPath: '/socialmedia'},
                 { title: 'Top Hits', icon: 'mdi-trending-up', routerPath: '/tophits'},
                 { title: 'Check Issues', icon: 'mdi-alert-circle-outline', routerPath: '/issues'},
-                { title: 'Scraper Checker', icon: 'mdi-file-find-outline', routerPath: ''},
+                { title: 'Scraper Checker', icon: 'mdi-file-find-outline', routerPath: '/scraperchecker'},
                 { title: 'Crawler Stats', icon: 'mdi-poll', routerPath: '/crawlerstats'},
                 { title: 'Scraper Data & Infra Monitoring', icon: 'mdi-clipboard-outline', routerPath: '/infrascraper'},
                 { title: 'Settings', icon: 'mdi-settings-outline', routerPath: '/settings'},
