@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 
+import Dashboard from './components/Dashboard.vue'
 import Login from './components/_Login/Login.vue'
 import Websites from './components/_Websites/Websites.vue'
 import Tophits from './components/_Tophits/Tophits.vue'
@@ -17,12 +18,12 @@ Vue.use(Router)
 
 export default new Router({
   routes: [
-/*      {
+     {
       //media-meter.net/datascraper (dashboard) // to import
       path: '/',
       name: 'dashboard',
-      component: () => import('')
-    },  */
+      component: Dashboard
+    }, 
     {
       //media-meter.net/datascraper/login
       path: '/login',

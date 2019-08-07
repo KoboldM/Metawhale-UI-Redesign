@@ -20,7 +20,8 @@
 
         <div id = "mediaMeterDate">
             <p id = "mediaMeterInPage"> media meter </p>
-            <span id = "dateInPage"> {{test}} </span> 
+
+            <span id = "dateInPage"> As of: {{}} </span> 
         </div>
 
     </v-app>
@@ -39,6 +40,7 @@ export default {
     #mediaMeterInPage {
         font-family: 'Comforta';
         color: #5952a1;
+        font-size: 40px;
     }
     #dateInPage {
         font-family: 'Avenir';

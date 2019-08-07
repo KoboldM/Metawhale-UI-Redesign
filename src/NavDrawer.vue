@@ -12,28 +12,28 @@
         fixed
     > 
 
-
-
-        <v-list-item
-            v-for="item in items"
-            :key="item.title"
-            link
-        >
-
-            <router-link
-                replace
-                :to = "item.routerPath"   
+    <!-- 
+        BUG: Router Link only works at text + icon side of the nav menu
+        Need to somehow router link the v-list-item to fix error 
+    -->
+            <v-list-item
+                v-for="item in items"
+                :key="item.title"
+                link
             >
-                <v-list-item-icon>
-                    <v-icon>{{ item.icon }}</v-icon>
-                </v-list-item-icon>
+                <router-link
+                    :to = "item.routerPath"
+                >
+                    <v-list-item-icon>
+                        <v-icon>{{ item.icon }}</v-icon>
+                    </v-list-item-icon>
 
-                <v-list-item-content>
-                    <v-list-item-title>{{ item.title }}</v-list-item-title>
-                </v-list-item-content>
-            </router-link>
-            
-        </v-list-item>
+                    <v-list-item-content>
+                        <v-list-item-title>{{ item.title }}</v-list-item-title>
+                    </v-list-item-content>
+                
+                </router-link>
+            </v-list-item>
 
   
 
