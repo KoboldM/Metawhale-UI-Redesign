@@ -10,7 +10,11 @@ npm install -g @vue/cli
 
 ```
 
+8 August 2019
+ - I just realized I haven't used Vuex router at all
+ - Possibly, it should only be used once there is actual data flowing ( for charts etc ) in the app?
 
+---
 
 To install & run ( Vue UI ) ( Recommended )
   1) Use command ``` vue ui ``` to launch the Vue UI 
