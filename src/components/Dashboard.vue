@@ -18,7 +18,7 @@
             <div id = "mediaMeterDate">
                 <p id = "mediaMeterInPage"> media meter </p>
 
-                <span id = "dateInPage"> As of: timeplaceholder </span> 
+                <span id = "dateInPage"> As of: {{curDateTime}} </span> 
             </div>
 
             <v-layout wrap row> 
@@ -132,8 +132,21 @@
 </template>
 
 <script>
+import { setInterval } from 'timers';
+var moment = require('moment');
+
 export default {
-  name: 'Dashboard'
+  name: 'Dashboard',
+  data() {
+        return {
+            curDateTime: ''
+        }
+    },
+    created() {
+        setInterval(() => {
+            this.curDateTime = moment().format('LLLL')
+        }, 1000)
+    }
 }
 </script>
 
