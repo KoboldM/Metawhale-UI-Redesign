@@ -43,6 +43,16 @@
     <v-card elevation>
         <v-toolbar flat>
             <v-toolbar-title id = "toolBarTitle"> View Users </v-toolbar-title>
+            <v-spacer></v-spacer>
+            <v-btn 
+            id = "addUserButton"
+            depressed
+            rounded
+            x-small
+            replace
+            ripple
+            class = "text-none"
+            >Add User</v-btn>
         </v-toolbar>
 
         <v-data-table
@@ -91,7 +101,7 @@ export default {
     #vCardAction {
         color: #5952a1;
         font-style: 'Roboto';
-        font-weight: 500;
+        font-weight: 400;
     }
     #vCardText {
         font-style: 'Roboto';
@@ -102,4 +112,10 @@ export default {
         color: #5952a1;
         font-weight: 300;
     }
+    #addUserButton {
+        font-weight: 300;
+        font-size: 12px;
+        color: white;
+        background-color: #1AF906;
+    };
 </style>

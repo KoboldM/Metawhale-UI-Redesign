@@ -21,30 +21,40 @@
         <div id = "mediaMeterDate">
             <p id = "mediaMeterInPage"> media meter </p>
 
-            <span id = "dateInPage"> As of: {{}} </span> 
+            <span id = "dateInPage"> As of <!-- {{curDateTime | momentFilter}} --> {{curDateTime}}  </span> 
         </div>
 
     </v-app>
 </template>
 
 <script>
+import { setInterval } from 'timers';
+var moment = require('moment');
+
 export default {
-    name: 'Crawlerstats'
+    name: 'Crawlerstats',
+    data() {
+        return {
+            /* curDateTime: Date.now() */
+            curDateTime: '',
+            oldDateTime: ''
+        }
+    },
+    filters: {
+        momentFilter: function(value) {
+            return moment(value).format('LLLL')
+        }
+    },
+    created() {
+        this.oldDateTime = new Date();
+        setInterval(() => { 
+            this.curDateTime = moment(this.oldDateTime).format('LLLL'); 
+            }, 1000)
+    }
 }
 </script>
 
-<style>
-    #mediaMeterDate {
-        text-align: center;
-    }
-    #mediaMeterInPage {
-        font-family: 'Comforta';
-        color: #5952a1;
-        font-size: 40px;
-    }
-    #dateInPage {
-        font-family: 'Avenir';
-        font-weight: lighter;
-    }
+<style scoped>
+    @import './designCrawlerstats.css' ;
 </style>
 

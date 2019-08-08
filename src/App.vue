@@ -4,7 +4,7 @@
       v-model="drawer"
     />
 
-    <v-app-bar
+    <v-app-bar  
       color= "#5952a1"
       app
     >
@@ -50,6 +50,21 @@ export default {
     elevateOnScroll: false
   })
 } 
+
+/* const store = new Vuex.Store({
+  state: {
+
+  },
+  mutations: {
+
+  },
+  actions: {
+
+  },
+  getters: {
+
+  }
+}) */
 </script>
 
 <style>
@@ -82,6 +97,26 @@ export default {
       padding-top: 12px;
   }
   
-  
+  /* width */
+  ::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+    border-radius: 20px;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+    border-radius: 20px;
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
 </style>
 

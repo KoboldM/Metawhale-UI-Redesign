@@ -1,3 +1,7 @@
+<!-- 
+    TODO:
+        1) Scaling Font for subCardDataDisplay
+ -->
 <template>
     <v-app>
             <div>
@@ -13,73 +17,89 @@
             </div>
         
     <!-- Local DB Queued -->
-        <v-card
-            dark
-            class = "mx-auto"
-            max-width= "344">
+    <v-layout>
+        <v-container grid-list-md fluid>
+            <v-layout row wrap justify-start>
+                <v-flex>  
+                    <v-card dark>
+                        <v-card-title class = "justify-center">Local DB Queued</v-card-title>
+                            <v-card light id = "subCard">
+                                <v-card-text id = "subCardDataDisplay">3213</v-card-text>
+                            </v-card>
+                    </v-card>
+                </v-flex>
 
-            <v-card-title>Local DB Queued</v-card-title>
+                <!-- Local DB Processing -->
+                <v-flex>
+                    <v-card dark>
+                        <v-card-title class = "justify-center">Local DB Processing</v-card-title>
+                            <v-card light id = "subCard">
+                                <v-card-text id = "subCardDataDisplay">136</v-card-text>
+                            </v-card>
+                    </v-card>
+                </v-flex>
 
-                <v-card light>
-                    <v-card-title>test</v-card-title>
-                </v-card>
+                <!-- Local DB Max ID -->
+                <v-flex>
+                    <v-card dark>
+                        <v-card-title class = "justify-center">Local DB Max ID</v-card-title>
+                            <v-card light id = "subCard">
+                                <v-card-text id = "subCardDataDisplay">10,744,964</v-card-text>
+                            </v-card>
+                    </v-card>
+                </v-flex>
 
-            <v-card-text>test</v-card-text>
-        </v-card>
+                <!-- Product DB Max ID -->
+                <v-flex>
+                    <v-card dark>
+                        <v-card-title class = "justify-center">Product DB Max ID </v-card-title>
+                            <v-card light id = "subCard">
+                                <v-card-text id = "subCardDataDisplay">6748</v-card-text>
+                            </v-card>
+                    </v-card>
+                </v-flex>
+            </v-layout>
+        </v-container>
+            
+        <v-container grid-list-xl fluid>
+            <v-layout justify-center column fill-height>
+                <v-flex>
+                    <v-card light id = "subCard">
+                        <v-img src="https://via.placeholder.com/100x100" width = "100" height = "100"/>
+                        <v-card-title id = "NBRSSStyle" class = "justify-center">News</v-card-title>
+                        <v-card-text id = "subCardDataDisplay">458,370 / 458,372</v-card-text>
+                    </v-card>
+                </v-flex>
 
-    <!-- Local DB Processing -->
-        <v-card
-            dark
-            class = "mx-auto"
-            max-width= "344">
+                <v-flex>
+                    <v-card light id = "subCard">
+                        <v-img src="https://via.placeholder.com/100x100" width = "100" height = "100"/>
+                        <v-card-title id = "NBRSSStyle" class = "justify-center">Blog</v-card-title>
+                        <v-card-text id = "subCardDataDisplay">469,391 / 469,397</v-card-text>
+                    </v-card>
+                </v-flex>
 
-            <v-card-title>Local DB Processing</v-card-title>
-
-                <v-card light>
-                    <v-card-title>test</v-card-title>
-                </v-card>
-
-            <v-card-text>test</v-card-text>
-        </v-card>
-
-    <!-- Local DB Max ID -->
-        <v-card
-            dark
-            class = "mx-auto"
-            max-width= "344">
-
-            <v-card-title>Local DB Max ID</v-card-title>
-
-                <v-card light>
-                    <v-card-title>test</v-card-title>
-                </v-card>
-
-            <v-card-text>test</v-card-text>
-        </v-card>
-
-    <!-- Product DB Max ID -->
-        <v-card
-            dark
-            class = "mx-auto"
-            max-width= "344">
-
-            <v-card-title>Product DB Max ID </v-card-title>
-
-                <v-card light>
-                    <v-card-title>test</v-card-title>
-                </v-card>
-
-            <v-card-text>test</v-card-text>
-        </v-card>
-
-
-
+                <v-flex>
+                    <v-card >
+                        <v-img src="https://via.placeholder.com/100x100" width = "100" height = "100"/>
+                        <v-card-title id = "NBRSSStyle" class = "justify-center">RSS</v-card-title>
+                        <v-card-text id = "subCardDataDisplay">646,291 / 646,292</v-card-text>
+                    </v-card>
+                </v-flex>
+            </v-layout>
+        </v-container>
+    </v-layout>
 
     </v-app>
 </template>
 
 <script>
+
 export default {
     name: 'Infrascraper'
 }
 </script>
+
+<style scoped>
+    @import './Infrascraper.css';
+</style>

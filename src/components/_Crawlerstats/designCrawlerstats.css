@@ -1,0 +1,12 @@
+#mediaMeterDate {
+    text-align: center;
+}
+#mediaMeterInPage {
+    font-family: 'Comforta';
+    color: #5952a1;
+    font-size: 40px;
+}
+#dateInPage {
+    font-family: 'Avenir';
+    font-weight: lighter;
+}

@@ -21,7 +21,7 @@
                 <span id = "dateInPage"> As of: timeplaceholder </span> 
             </div>
 
-            <v-layout wrap row>
+            <v-layout wrap row> 
                 <v-flex d-flex xs12 md6 xl6>
                     <v-card dark>
                         <v-card-title id = "mainCardTitle"> Articles </v-card-title>
@@ -137,33 +137,9 @@ export default {
 }
 </script>
 
-<style>
-    #mainCardTitle {
-        font-family: 'Roboto';
-        font-size: 35px;
-        font-weight: 300;
-    }
-    #mainDataNumber{
-        font-family: 'Roboto';
-        font-size: bold;
-        font-size: 50px;
-    }
-    #dataNumber {
-        font-family: 'Roboto';
-        font-size: 50px;
-        font-weight: bold;
-        color: blue;
-    }
-    #subDataText {
-        font-family: 15px;
-    }
-    #subDataTextLight {
-        font-family: 15px;
-        color: #000000;
-    }
-    #subCard {
-        color: "#DCDDDE";
-        margin: 2px;
-    }
+<style scoped>
+
+    @import '../assets/dashboardStyles.css'
+
 </style>
 
