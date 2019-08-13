@@ -9,6 +9,10 @@
       app
     >
 
+    <!-- 
+      can try to use v-img??? 
+      change the placeholder too
+      -->
     <img
       src = "./assets/logo.png"
       height = 50px;
@@ -22,7 +26,6 @@
 
 
     <v-toolbar-title>
-      
       <span id = "toolbarSubTitle">Data Scraper</span>
     </v-toolbar-title>
 
@@ -76,47 +79,6 @@ export default {
     font-family: Avenir;
     src: url('./assets/fonts/AvenirLTStd-Medium.otf');
   }
-  #toolbarTitle {
-    font-weight: bold;
-    color: #f78b1e;
-    font-family: Comforta;
-  }
-  #toolbarSubTitle {
-    font-weight: bolder;
-    color: #dcddde;
-    font-family: Avenir;
-  }
-  #divLocationIndicator {
-      height: 90px;
-      width: auto;
-      background-color: #F78B1E;
-      font-family: Avenir;
-      font-size: 40px;
-      font-weight: lighter;
-      padding-left: 8px;
-      padding-top: 12px;
-  }
-  
-  /* width */
-  ::-webkit-scrollbar {
-    width: 5px;
-  }
-
-  /* Track */
-  ::-webkit-scrollbar-track {
-    background: #f1f1f1; 
-    border-radius: 20px;
-  }
-
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: #888; 
-    border-radius: 20px;
-  }
-
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: #555; 
-  }
+  @import './assets/appStyles.css';
 </style>
 

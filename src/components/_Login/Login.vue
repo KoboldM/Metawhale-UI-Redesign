@@ -3,6 +3,8 @@
         1) Scaling image
         2) Fix v-container so it stays complete center
         3) Fix login authentications
+        4) Remove login from router-view app
+        5) Fix overall design
 -->
 
 <template>

@@ -1,3 +1,12 @@
+<!-- 
+    TODO: 
+        1) User Details
+            1.1) Username auto get from session
+            1.2) Name auto get from session
+            1.3) Change Password function
+        2) API Key tables (live update maybe? or fetch data once only)
+        3) View Users
+-->
 <template>
     <v-app>
         <div>

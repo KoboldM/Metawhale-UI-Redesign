@@ -1,6 +1,9 @@
 <!-- 
     TODO:
         1) Scaling Font for subCardDataDisplay
+        2) Add picture to cards ( 7 icons )
+        3) Live updating (endpoint?) on data display
+        4) Fix grid and scaling of cards & layout
  -->
 <template>
     <v-app>
@@ -8,8 +11,7 @@
                 <v-responsive style = "
                 background-color: orange;"
                 id = "divLocationIndicator"
-                vue-resize-text
-                >
+                vue-resize-text>
 
                 Scraper Data & Infra Monitoring
 
@@ -61,7 +63,7 @@
             </v-layout>
         </v-container>
             
-        <v-container grid-list-xl fluid>
+        <v-container grid-list-sm fluid>
             <v-layout justify-center column fill-height>
                 <v-flex>
                     <v-card light id = "subCard">

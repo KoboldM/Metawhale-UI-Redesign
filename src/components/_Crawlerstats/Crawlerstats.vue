@@ -1,9 +1,8 @@
 <!-- 
     TODO: 
-        1) Add Date and Time w/ Live Display
-        2) Fix font proportion and scaling of MediaMeter ( #mediaMeterInPage )
-        3) Graph
-        4) table of crawler stats visits w/ card
+        1) Fix font proportion and scaling of MediaMeter ( #mediaMeterInPage )
+        2) Graph
+        3) table of crawler stats visits w/ card
 -->
 
 <template>

@@ -4,9 +4,10 @@
 #mediaMeterInPage {
     font-family: 'Comforta';
     color: #5952a1;
-    font-size: 40px;
+    font-size: 48px;
 }
 #dateInPage {
     font-family: 'Avenir';
     font-weight: lighter;
+    font-size: 25px;
 }

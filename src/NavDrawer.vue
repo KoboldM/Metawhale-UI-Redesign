@@ -1,14 +1,16 @@
 <!-- 
     TODO:
         1) Fix Routerlink CSS
-
+        2) Fix Routerlink - Active Section
+        3) Logout should remove login authentication
+            3.1) Logout should lead to login page again
+            
 -->
 <template>
     <v-navigation-drawer
         v-bind:value="value"
         app
         dark
-        bottom
         fixed
     > 
 
