@@ -30,8 +30,6 @@
                     <v-card-actions id = "vCardAction">Change Password</v-card-actions>
                 </v-card>
 
-
-
         </v-layout>
 
     <v-card elevation>

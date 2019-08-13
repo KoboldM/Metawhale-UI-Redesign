@@ -38,17 +38,28 @@
 
                     <v-flex>
                         <v-card>
-                            test
+                            <v-toolbar flat>
+                                <v-toolbar-title> Day Comparison </v-toolbar-title>
+                            </v-toolbar>
                         </v-card>
                     </v-flex>
 
                     <v-flex>
                         <v-card>
-                            test
+                            <v-toolbar flat>
+                                <v-toolbar-title>Issues Record</v-toolbar-title>
+                            </v-toolbar>
+                            <v-tabs>
+                                <v-tab>Article Issues</v-tab>
+                                <v-tab>Section Issues</v-tab>
+                            </v-tabs>
                         </v-card>
                     </v-flex>
 
                     <v-flex>
+                        <v-toolbar flat>
+                            <v-toolbar-title>Error Logs</v-toolbar-title>
+                        </v-toolbar>
                         <v-data-table>
                         </v-data-table>
                     </v-flex>

@@ -21,6 +21,59 @@
 
             </v-responsive>
         </div>
+
+        <div>
+            <v-container>
+                <v-layout>
+                    <v-flex>
+                        <v-btn
+                        class = "text-none"
+                        rounded
+                        x-small
+                        replace
+                        ripple
+                        >All Articles
+                        </v-btn>
+                    </v-flex>
+
+                    <v-flex>
+                        <v-btn
+                        class = "text-none"
+                        rounded
+                        x-small
+                        replace
+                        ripple
+                        >Search by URL
+                        </v-btn>
+                    </v-flex>
+
+                    <v-flex>
+                        <v-btn
+                        class = "text-none"
+                        rounded
+                        x-small
+                        replace
+                        ripple
+                        >Add Article
+                        </v-btn>
+                    </v-flex>
+
+                    <v-flex>
+                        <v-tabs>
+                            <v-tab>Article Stats</v-tab>
+                            <v-tab>With Articles Today</v-tab>
+                            <v-tab>Zero Articles Today</v-tab>
+                        </v-tabs>
+
+                        <v-data-table>
+                        </v-data-table>
+
+                    </v-flex>
+
+                </v-layout>
+            </v-container>
+        </div>
+
     </v-app>
 </template>
 
